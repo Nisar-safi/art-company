@@ -1,0 +1,32 @@
+{
+  "title": "Our Proven Process",
+  "description": "Four clear steps that turn your vision into reality — with transparency and excellence at every stage.",
+  "cta": {
+    "text": "Start Your Project",
+    "link": "/contact"
+  },
+  "steps": [
+    {
+      "icon": "🤝",
+      "title": "Consultation",
+      "description": "We begin with an in-depth discussion to understand your goals, challenges, and unique requirements."
+    },
+    {
+      "icon": "🎨",
+      "title": "Design & Development",
+      "description": "Our experts craft custom strategies and beautiful, functional designs tailored perfectly to your brand."
+    },
+    {
+      "icon": "👁️",
+      "title": "Visualization",
+      "description": "See your project come to life through detailed mockups, prototypes, and previews before final build."
+    },
+    {
+      "icon": "🚀",
+      "title": "Launch & Support",
+      "description": "We deploy your project seamlessly and provide ongoing support to ensure continued success."
+    }
+      
+    
+  ]
+}

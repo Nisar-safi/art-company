@@ -1,0 +1,25 @@
+{
+  "links": [
+    {
+      "text": "Home",
+      "href": "/",
+      "active": true
+    },
+    {
+      "text": "About",
+      "href": "/about"
+    },
+    {
+      "text": "Services",
+      "href": "/services"
+    },
+    {
+      "text": "Portfolio",
+      "href": "/portfolio"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    }
+  ]
+}

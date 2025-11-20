@@ -1,0 +1,21 @@
+{
+  "title": "Home",
+  "heroSlides": [
+    {
+      "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
+      "title": "Welcome to Our Company",
+      "subtitle": "Innovative Digital Solutions That Drive Real Results"
+    },
+    {
+      "image": "/images/hero-slide-2.jpg",
+      "title": "Build With Confidence",
+      "subtitle": "Modern Web Development • Consulting • Ongoing Support"
+    },
+    {
+      "image": "/images/hero-slide-3.jpg",
+      "title": "Your Success Is Our Mission",
+      "subtitle": "Tailored strategies for businesses of all sizes"
+    }
+  ],
+  "body": "# Welcome to Our Company\n\nWe are a forward-thinking company dedicated to delivering exceptional solutions for our clients. Our team of experts works tirelessly to ensure your success.\n\n## Our Services\n\n- **Web Development**: Modern, responsive websites built with the latest technologies\n- **Consulting**: Strategic advice to help grow your business\n- **Support**: Ongoing maintenance and support for all your digital needs\n\n## Why Choose Us?\n\nWe combine years of experience with innovative approaches to deliver results that exceed expectations. Our client-focused methodology ensures we understand your unique needs and deliver tailored solutions."
+}

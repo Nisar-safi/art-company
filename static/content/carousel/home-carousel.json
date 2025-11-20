@@ -1,0 +1,35 @@
+{
+  "title": "Featured Services",
+  "cards": [
+    {
+      "image": "/images/service1.jpg",
+      "title": "Web Development",
+      "description": "Custom websites and web applications built with modern technologies and best practices.",
+      "cta": { "text": "Explore Services", "link": "#web-dev" }
+    },
+    {
+      "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
+      "title": "UI/UX Design",
+      "description": "Beautiful and intuitive user interfaces that provide exceptional user experiences.",
+      "cta": { "text": "View Portfolio", "link": "#design" }
+    },
+    {
+      "image": "/images/service3.jpg",
+      "title": "Digital Marketing",
+      "description": "Comprehensive digital marketing strategies to grow your online presence and reach.",
+      "cta": { "text": "Get Strategy", "link": "#marketing" }
+    },
+    {
+      "image": "/images/service4.jpg",
+      "title": "Consulting",
+      "description": "Expert advice and strategic planning to help your business achieve its goals.",
+      "cta": { "text": "Book a Call", "link": "#consulting" }
+    },
+    {
+      "image": "/images/service5.jpg",
+      "title": "Support & Maintenance",
+      "description": "Ongoing support and maintenance to keep your systems running smoothly.",
+      "cta": { "text": "See Plans", "link": "#support" }
+    }
+  ]
+}

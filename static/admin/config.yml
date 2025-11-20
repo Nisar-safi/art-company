@@ -1,0 +1,107 @@
+backend:
+  name: github
+  repo: Nisar-safi/my-sveltia-project
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: pages
+    label: Pages
+    folder: "static/content/pages"
+    create: true
+    extension: json
+    format: json                     
+    slug: "{{slug}}"
+    fields:
+    
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - { label: "Title (optional override)", name: "title", widget: "string", required: false }
+      - { label: "Subtitle (optional override)", name: "subtitle", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: navigation
+    label: Navigation
+    files:
+      - label: "Main Navigation"
+        name: "main-nav"
+        file: "static/content/navigation.json"
+        fields:
+          - label: "Navigation Items"
+            name: "links"
+            widget: "list"
+            fields:
+              - { label: "Link Text", name: "text", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+              - { label: "Is Active", name: "active", widget: "boolean", required: false, default: false }
+
+  - name: carousel
+    label: Carousel
+    files:
+    - label: "Home Carousel"
+      name: "home-carousel"
+      file: "static/content/carousel/home-carousel.json"
+      fields:
+        - { label: "Carousel Title", name: "title", widget: "string", required: false }
+
+        - label: "Cards"
+          name: "cards"
+          widget: "list"
+          collapsed: false
+          fields:
+            - { label: "Card Image", name: "image", widget: "image", required: true }
+            - { label: "Card Title", name: "title", widget: "string", required: true }
+            - { label: "Card Description", name: "description", widget: "text", required: true }
+            - {label: "Button Text (optional)", name: "cta_text", widget: "string", default: "Learn More", required: false }
+            - {label: "Button Link (optional)", name: "cta_link", widget: "string", required: false }
+  - name: process
+    label: Process
+    files:
+    - label: "Workflow Process"
+      name: "workflow"
+      file: "static/content/process/workflow.json"
+      fields:
+        - { label: "Section Title", name: "title", widget: "string", default: "Our Proven Process" }
+        - { label: "Section Description", name: "description", widget: "text", required: false, default: "Four clear steps that turn your vision into reality — with transparency and excellence at every stage." }
+        - label: "Call to Action"
+          name: "cta"
+          widget: "object"
+          required: false
+          fields:
+            - { label: "Button Text", name: "text", widget: "string", default: "Start Your Project" }
+            - { label: "Button Link", name: "link", widget: "string", default: "/contact" }
+        - label: "Process Steps"
+          name: "steps"
+          widget: "list"
+          fields:
+            - { label: "Step Icon", name: "icon", widget: "string", default: "🤝" }
+            - { label: "Step Title", name: "title", widget: "string" }
+            - { label: "Step Description", name: "description", widget: "text" }       
+  - name: settings
+    label: Site Settings
+    files:
+      - label: "Company"
+        name: "company"
+        file: "static/content/company.json"
+        fields:
+          - { label: "Company Name", name: "name", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - label: "Social Media"
+            name: "social"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "Twitter", name: "twitter", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+          - label: "Contact Information"
+            name: "contact"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Address", name: "address", widget: "text", required: false }
