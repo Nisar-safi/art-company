@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Nisar-safi/my-sveltia-project
+  repo: Nisar-safi/art-company
   branch: main
 
 media_folder: "static/images"
