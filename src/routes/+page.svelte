@@ -2,10 +2,11 @@
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { marked } from 'marked';
-	import { page, company, navigation, carousel, process, lastUpdate} from '$lib/utils/stores.js';
+	import { page, company, navigation, carousel, process,testimonials, lastUpdate} from '$lib/utils/stores.js';
 	import Header from '$lib/components/Header.svelte';
 	import Carousel from '$lib/components/Carousel.svelte';
 	import Process from '$lib/components/Process.svelte';
+	  import Testimonials from '$lib/components/Testimonials.svelte';
 	import CompanyInfo from '$lib/components/CompanyInfo.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -48,12 +49,16 @@
 		if (!browser) return;
 		const ts = Date.now();
 		try {
-			const [p, c, n, car, proc] = await Promise.all([
+			const [p, c, n, car, proc ,testmo] = await Promise.all([
 				fetch(`/content/pages/home.json?t=${ts}`),
 				fetch(`/content/company.json?t=${ts}`),
 				fetch(`/content/navigation.json?t=${ts}`),
 				fetch(`/content/carousel/home-carousel.json?t=${ts}`),
-				fetch(`/content/process/workflow.json?t=${ts}`)
+				fetch(`/content/process/workflow.json?t=${ts}`),
+				fetch(`/content/testimonials/testimonials.json?t=${ts}`)
+			
+
+
 				
 			]);
 			if (p.ok) page.set(await p.json());
@@ -61,6 +66,7 @@
 			if (n.ok) navigation.set(await n.json());
 			if (car.ok) carousel.set(await car.json());
 			if (proc.ok) process.set(await proc.json());
+			if (testmo.ok) testimonials.set(await testmo.json());
 			
 			
 		} catch (e) {
@@ -170,6 +176,8 @@
 	<Carousel carouselData={$carousel} />
 	<!-- Process Section -->
 	  <Process processData={$process} />
+	<!-- Testimonials Section -->
+	<Testimonials testimonialsData={$testimonials} />
 
 	<!-- Company Info -->
 	<CompanyInfo />

@@ -1,0 +1,52 @@
+{
+  "title": "What Our Clients Say",
+  "description": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+
+  "testimonials": [
+    {
+      "photo": "/images/clients/ahmed-hassan.jpg",
+      "name": "Ahmed Hassan",
+      "position": "CEO",
+      "company": "TechStart Inc.",
+      "logo": "/images/logos/techstart.svg",
+      "text": "Working with this team was an absolute pleasure. They delivered beyond our expectations and the website they built has significantly increased our online presence and conversions.",
+      "rating": 5
+    },
+    {
+      "photo": "/images/clients/fatima-al-otaibi.jpg",
+      "name": "Fatima Al-Otaibi",
+      "position": "Marketing Director",
+      "company": "BrandCo",
+      "logo": "/images/logos/brandco.svg",
+      "text": "The attention to detail and creative solutions provided were exceptional. They truly understood our brand vision and brought it to life beautifully.",
+      "rating": 5
+    },
+    {
+      "photo": "/images/clients/omar-khan.jpg",
+      "name": "Omar Khan",
+      "position": "Founder",
+      "company": "StartupXYZ",
+      "logo": "/images/logos/startupxyz.svg",
+      "text": "Professional, responsive, and highly skilled. The project was completed on time and within budget. I would highly recommend their services to anyone.",
+      "rating": 5
+    },
+    {
+      "photo": "/images/clients/aisha-rahman.jpg",
+      "name": "Aisha Rahman",
+      "position": "Product Manager",
+      "company": "InnovateCo",
+      "logo": "/images/logos/innovateco.svg",
+      "text": "Outstanding service from start to finish. They were patient with our many requests and delivered a product that exceeded all our expectations.",
+      "rating": 5
+    },
+    {
+      "photo": "/images/clients/yusuf-abdullah.jpg",
+      "name": "Yusuf Abdullah",
+      "position": "CTO",
+      "company": "ScaleFast",
+      "logo": "/images/logos/scalefast.svg",
+      "text": "The technical expertise and problem-solving skills demonstrated were impressive. They handled complex requirements with ease and delivered robust solutions.",
+      "rating": 5
+    }
+  ]
+}

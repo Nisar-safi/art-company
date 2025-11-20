@@ -77,7 +77,32 @@ collections:
           fields:
             - { label: "Step Icon", name: "icon", widget: "string", default: "🤝" }
             - { label: "Step Title", name: "title", widget: "string" }
-            - { label: "Step Description", name: "description", widget: "text" }       
+            - { label: "Step Description", name: "description", widget: "text" }
+
+
+
+
+
+  - name: testimonials
+    label: Testimonials
+    files:
+    - label: "Client Testimonials"
+      name: "testimonials"
+      file: "static/content/testimonials/testimonials.json"
+      fields:
+        - { label: "Section Title", name: "title", widget: "string", default: "What Our Clients Say" }
+        - { label: "Section Description", name: "description", widget: "text", required: false, default: "Don't just take our word for it. Here's what our clients have to say about working with us." }
+        - label: "Testimonials"
+          name: "testimonials"
+          widget: "list"
+          fields:
+            - { label: "Client Photo", name: "photo", widget: "image", required: false }
+            - { label: "Client Name", name: "name", widget: "string" }
+            - { label: "Client Position", name: "position", widget: "string" }
+            - { label: "Company Name", name: "company", widget: "string" }
+            - { label: "Company Logo", name: "logo", widget: "image", required: false }
+            - { label: "Testimonial Text", name: "text", widget: "text" }
+            - { label: "Rating (1-5)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, required: false }                 
   - name: settings
     label: Site Settings
     files:
