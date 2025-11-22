@@ -15,12 +15,16 @@ collections:
     format: json                     
     slug: "{{slug}}"
     fields:
-    
-      - { label: "Image", name: "image", widget: "image", required: true }
-      - { label: "Title (optional override)", name: "title", widget: "string", required: false }
-      - { label: "Subtitle (optional override)", name: "subtitle", widget: "text", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-
+  
+    - { label: "Body", name: "body", widget: "markdown" }
+    - label: "Hero Slides"
+      name: "heroSlides"
+      widget: "list"
+      required: false
+      fields:
+        - { label: "Slide Image", name: "image", widget: "image", required: true }
+        - { label: "Slide Title", name: "title", widget: "string" }
+        - { label: "Slide Subtitle", name: "subtitle", widget: "text", required: false }
   - name: navigation
     label: Navigation
     files:
