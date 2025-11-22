@@ -25,6 +25,18 @@ collections:
         - { label: "Slide Image", name: "image", widget: "image", required: true }
         - { label: "Slide Title", name: "title", widget: "string" }
         - { label: "Slide Subtitle", name: "subtitle", widget: "text", required: false }
+        
+
+    - label: "Team Members"
+      name: "team"
+      widget: "list"
+      required: false
+      fields:
+        - { label: "Photo", name: "photo", widget: "image", required: false }
+        - { label: "Name", name: "name", widget: "string" }
+        - { label: "Position", name: "position", widget: "string" }
+        - { label: "Bio", name: "bio", widget: "text" }
+
   - name: navigation
     label: Navigation
     files:

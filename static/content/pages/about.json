@@ -1,0 +1,43 @@
+{
+  "body": "# Our Story\n\nFounded with a vision to deliver exceptional digital solutions, we have been helping businesses transform their online presence since our inception. Our journey began with a simple belief: every business deserves access to cutting-edge technology and creative expertise.\n\n## Our Mission\n\nTo empower businesses with innovative digital solutions that drive growth, enhance user experiences, and create lasting value for our clients and their customers.\n\n## Our Values\n\n- **Excellence**: We strive for perfection in every project\n- **Innovation**: We embrace new technologies and creative approaches\n- **Collaboration**: We work closely with our clients as partners\n- **Integrity**: We maintain transparency and honesty in all our dealings\n\n## Meet Our Team\n\nOur diverse team of experts brings together years of experience in design, development, and digital strategy to deliver outstanding results for our clients.",
+  "heroSlides": [
+    {
+      "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
+      "title": "Our Team",
+      "subtitle": "Dedicated professionals committed to your success"
+    },
+    {
+      "image": "/images/about-mission.jpg",
+      "title": "Our Mission",
+      "subtitle": "Driving innovation and delivering excellence"
+    },
+    {
+      "image": "/images/about-values.jpg",
+      "title": "Our Values",
+      "subtitle": "Excellence, Innovation, Collaboration, Integrity"
+    }
+  ],
+  "subtitle": "bbbbbbbbbbbbbbbbbbLearn more about our story, mission, and the team behind our success",
+  "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
+  "title": "About Us",
+  "team": [
+    {
+      "photo": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
+      "name": "Baseer Ahmad",
+      "position": "CEO & Founder",
+      "bio": "With over 15 years of experience in digital transformation, John leads our vision and strategy."
+    },
+    {
+      "photo": "/images/team/cto.jpg",
+      "name": "Abdullah Al-Mansour",
+      "position": "CTO",
+      "bio": "Sarah oversees our technical architecture and ensures we stay at the forefront of technology."
+    },
+    {
+      "photo": "/images/team/design-lead.jpg",
+      "name": "dil Jallal",
+      "position": "Design Lead",
+      "bio": "Mike brings creative vision and user-centered design principles to every project."
+    }
+  ]
+}
