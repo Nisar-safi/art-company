@@ -1,171 +1,93 @@
 <script>
-	import { browser } from '$app/environment';
-	import { company, lastUpdate } from '$lib/utils/stores.js';
+  import { browser } from '$app/environment';
+  import { company, lastUpdate } from '$lib/utils/stores.js';
 
-	$: currentCompany = $company;
-	$: lastUpdateTime = $lastUpdate;
+  $: currentCompany = $company;
+  $: lastUpdateTime = $lastUpdate;
 </script>
 
-<footer>
-	<div class="container">
-		<div class="footer-content">
-			<div class="footer-info">
-				<div class="footer-logo">
-					{#if currentCompany.logo}
-						<img src={currentCompany.logo} alt={currentCompany.name} class="footer-logo-img" />
-					{/if}
-					<div>
-						<div class="company-name">{currentCompany.name || 'My Company'}</div>
-						{#if currentCompany.tagline}
-							<div class="company-tagline">{currentCompany.tagline}</div>
-						{/if}
-					</div>
-				</div>
+<footer class="bg-gray-900/95 dark:bg-black backdrop-blur-xl border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
 
-				{#if currentCompany.social}
-					<div class="footer-social">
-						{#if currentCompany.social.facebook}
-							<a href={currentCompany.social.facebook} target="_blank" rel="noopener">📘</a>
-						{/if}
-						{#if currentCompany.social.twitter}
-							<a href={currentCompany.social.twitter} target="_blank" rel="noopener">🐦</a>
-						{/if}
-						{#if currentCompany.social.instagram}
-							<a href={currentCompany.social.instagram} target="_blank" rel="noopener">📷</a>
-						{/if}
-						{#if currentCompany.social.linkedin}
-							<a href={currentCompany.social.linkedin} target="_blank" rel="noopener">💼</a>
-						{/if}
-					</div>
-				{/if}
-			</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
 
-			<div class="footer-meta">
-				<div>
-					© {new Date().getFullYear()}
-					{currentCompany.name || 'My Company'}. All rights reserved.
-				</div>
-				<div class="last-updated">
-					Last updated: {browser ? new Date(lastUpdateTime).toLocaleTimeString() : '...'}
-				</div>
-				{#if currentCompany.contact && currentCompany.contact.email}
-					<div class="footer-contact">
-						<a href="mailto:{currentCompany.contact.email}">{currentCompany.contact.email}</a>
-					</div>
-				{/if}
-			</div>
-		</div>
-	</div>
+      <!-- Logo + Tagline + Social -->
+      <div class="space-y-8">
+        <div class="flex items-center gap-4">
+          {#if currentCompany.logo}
+            <img src={currentCompany.logo} alt={currentCompany.name} class="h-12 w-auto" />
+          {/if}
+          <div>
+            <div class="text-2xl font-bold text-white">
+              {currentCompany.name || 'Your Brand'}
+            </div>
+            {#if currentCompany.tagline}
+              <p class="text-gray-400 text-sm mt-1">{currentCompany.tagline}</p>
+            {/if}
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        {#if currentCompany.social}
+          <div class="flex gap-4">
+            {#if currentCompany.social.instagram}
+              <a href={currentCompany.social.instagram} target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-500 via-purple-500 to-orange-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98C23.986 15.668 24 15.259 24 12c0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg>
+              </a>
+            {/if}
+            {#if currentCompany.social.twitter}
+              <a href={currentCompany.social.twitter} target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-black dark:bg-white text-white dark:text-black flex items-center justify-center hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            {/if}
+            {#if currentCompany.social.facebook}
+              <a href={currentCompany.social.facebook} target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-[#1877f2] flex items-center justify-center text-white hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+            {/if}
+            {#if currentCompany.social.linkedin}
+              <a href={currentCompany.social.linkedin} target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-[#0a66c2] flex items-center justify-center text-white hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9.277h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9.277h3.564v11.175zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            {/if}
+          </div>
+        {/if}
+      </div>
+
+      <!-- Contact Info -->
+      <div class="text-gray-400 space-y-4">
+        <h4 class="text-white font-semibold text-lg mb-4">Get in Touch</h4>
+        {#if currentCompany.contact?.email}
+          <a href="mailto:{currentCompany.contact.email}" class="block hover:text-sky-400 transition-colors">
+            {currentCompany.contact.email}
+          </a>
+        {/if}
+        {#if currentCompany.contact?.phone}
+          <a href="tel:{currentCompany.contact.phone}" class="block hover:text-sky-400 transition-colors">
+            {currentCompany.contact.phone}
+          </a>
+        {/if}
+        {#if currentCompany.contact?.address}
+          <p class="text-sm leading-relaxed whitespace-pre-line">
+            {currentCompany.contact.address}
+          </p>
+        {/if}
+      </div>
+
+      <!-- Copyright + Last Updated -->
+      <div class="text-gray-500 text-sm space-y-3 text-center md:text-right">
+        <p>
+          © {new Date().getFullYear()} {currentCompany.name || 'Your Brand'}. All rights reserved.
+        </p>
+        {#if browser}
+          <p class="text-xs opacity-70">
+            Last updated: {new Date(lastUpdateTime).toLocaleString()}
+          </p>
+        {/if}
+      </div>
+    </div>
+
+    <!-- Bottom Accent Line -->
+    <div class="mt-12 h-1 bg-gradient-to-r from-sky-500 via-cyan-500 to-sky-500 rounded-full opacity-50"></div>
+  </div>
 </footer>
-
-<style>
-	:root {
-		--primary: #3b82f6;
-		--primary-dark: #2563eb;
-		--text: #1f2937;
-		--text-light: #6b7280;
-		--bg: #ffffff;
-		--bg-light: #f9fafb;
-		--border: #e5e7eb;
-	}
-
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 1.5rem;
-	}
-
-	footer {
-		background-color: var(--bg-light);
-		border-top: 1px solid var(--border);
-		padding: 2rem 0;
-		margin-top: 5rem;
-		color: var(--text-light);
-		font-size: 0.9rem;
-	}
-
-	.footer-content {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-
-	.footer-info {
-		display: flex;
-		flex-direction: column;
-		gap: 1.5rem;
-	}
-
-	.footer-logo {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	.footer-logo-img {
-		height: 40px;
-	}
-
-	.company-name {
-		font-weight: 600;
-		color: var(--text);
-	}
-
-	.company-tagline {
-		font-size: 0.8rem;
-		margin-top: 0.25rem;
-	}
-
-	.footer-social {
-		display: flex;
-		gap: 1rem;
-	}
-
-	.footer-social a {
-		display: inline-block;
-		padding: 0.5rem;
-		background: var(--bg);
-		border-radius: 6px;
-		text-decoration: none;
-		font-size: 1.1rem;
-		transition: all 0.2s;
-	}
-
-	.footer-social a:hover {
-		transform: translateY(-2px);
-		background: var(--primary);
-		color: white;
-	}
-
-	.footer-meta {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		text-align: right;
-	}
-
-	.footer-contact a {
-		color: var(--primary);
-		text-decoration: none;
-	}
-
-	.footer-contact a:hover {
-		text-decoration: underline;
-	}
-
-	@media (max-width: 768px) {
-		.footer-content {
-			flex-direction: column;
-			gap: 2rem;
-			text-align: center;
-		}
-
-		.footer-meta {
-			text-align: center;
-		}
-
-		.footer-logo {
-			justify-content: center;
-		}
-	}
-</style>
