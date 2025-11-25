@@ -1,5 +1,7 @@
 <script>
 	import { navigation, company } from '$lib/utils/stores.js';
+	import LanguageSwitcher from '$lib/components/LanguageSwitcher.svelte';
+	import { SHOW_LANGUAGE_SWITCHER } from '../../../Config.js';
 
 	export let mobileMenuOpen = false;
 
@@ -34,6 +36,13 @@
 					{companyName}
 				</span>
 			</a>
+			{#if SHOW_LANGUAGE_SWITCHER}
+				<div class="navbar-item">
+					<div class="LanguageSwitcher">
+						<LanguageSwitcher />
+					</div>
+				</div>
+			{/if}
 
 			<!-- Desktop Navigation -->
 			<nav class="hidden items-center space-x-10 md:flex">
