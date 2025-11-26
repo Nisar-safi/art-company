@@ -1,5 +1,19 @@
 {
   "companyinfo": {
-
+    "get_in_touch": "تواصل معنا",
+    "connect_subtitle": "نحن هنا لمساعدتك في تحويل رؤيتك إلى واقع.",
+    "contact_information": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "follow_us": "تابعنا على وسائل التواصل الاجتماعي",
+    "start_project_cta": "ابدأ مشروعك اليوم",
+    "follow_on_instagram": "تابعنا على إنستغرام",
+    "like_on_facebook": "أعجب بصفحتنا على فيسبوك",
+    "follow_on_twitter": "تابعنا على منصة X / تويتر",
+    "connect_on_linkedin": "تواصل معنا على لينكدإن",
+    "Contact-us": "تواصل معنا",
+    "all_rights_reserved": "جميع الحقوق محفوظة.",
+    "lastupdate": "آخر تحديث:"
   }
 }

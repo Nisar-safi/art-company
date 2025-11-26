@@ -1,6 +1,8 @@
 <script>
+  import { _ } from "$lib/translations/index.js";
   import { browser } from '$app/environment';
   import { company, lastUpdate } from '$lib/utils/stores.js';
+
 
   $: currentCompany = $company;
   $: lastUpdateTime = $lastUpdate;
@@ -56,7 +58,9 @@
 
       <!-- Contact Info -->
       <div class="text-gray-400 space-y-4">
-        <h4 class="text-white font-semibold text-lg mb-4">Get in Touch</h4>
+        <h4 class="text-white font-semibold text-lg mb-4">
+          {$_('companyinfo.Contact-us')}
+        </h4>
         {#if currentCompany.contact?.email}
           <a href="mailto:{currentCompany.contact.email}" class="block hover:text-sky-400 transition-colors">
             {currentCompany.contact.email}
@@ -77,11 +81,11 @@
       <!-- Copyright + Last Updated -->
       <div class="text-gray-500 text-sm space-y-3 text-center md:text-right">
         <p>
-          © {new Date().getFullYear()} {currentCompany.name || 'Your Brand'}. All rights reserved.
+          © {new Date().getFullYear()} {currentCompany.name || 'Your Brand'}. {$_('companyinfo.all_rights_reserved')}
         </p>
         {#if browser}
           <p class="text-xs opacity-70">
-            Last updated: {new Date(lastUpdateTime).toLocaleString()}
+            {$_("companyinfo.lastupdate")} {new Date(lastUpdateTime).toLocaleString()}
           </p>
         {/if}
       </div>
