@@ -1,35 +1,60 @@
 {
-  "title": "Featured Services",
+  "title": "الخدمات المميزة",
   "cards": [
     {
-      "image": "/images/service1.jpg",
-      "title": "Web Development",
-      "description": "Custom websites and web applications built with modern technologies and best practices.",
-      "cta": { "text": "Explore Services", "link": "#web-dev" }
+      "image": "/images/clouds-8779574_960_720.jpg",
+      "title": "تطوير الويب",
+      "description": "مواقع وتطبيقات ويب مخصصة مصممة بأحدث التقنيات وأفضل الممارسات المهنية.",
+      "cta_text": "",
+      "cta_link": "",
+      "cta": {
+        "text": "استكشف الخدمات",
+        "link": "#web-dev"
+      }
     },
     {
-      "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
-      "title": "UI/UX Design",
-      "description": "Beautiful and intuitive user interfaces that provide exceptional user experiences.",
-      "cta": { "text": "View Portfolio", "link": "#design" }
+      "image": "/images/web-development-8554218_960_720.jpg",
+      "title": "تصميم واجهة المستخدم",
+      "description": "واجهات مستخدم جمية وبديهية توفر تجارب استثنائية للمستخدمين.",
+      "cta_text": "",
+      "cta_link": "",
+      "cta": {
+        "text": "عرض الأعمال",
+        "link": "#design"
+      }
     },
     {
-      "image": "/images/service3.jpg",
-      "title": "Digital Marketing",
-      "description": "Comprehensive digital marketing strategies to grow your online presence and reach.",
-      "cta": { "text": "Get Strategy", "link": "#marketing" }
+      "image": "/images/web-3828301_960_720.jpg",
+      "title": "التسويق الرقمي",
+      "description": "استراتيجيات تسويق رقمي شاملة لتعزيز وجودك على الإنترنت وزيادة وصولك.",
+      "cta_text": "",
+      "cta_link": "",
+      "cta": {
+        "text": "اطلب استراتيجية",
+        "link": "#marketing"
+      }
     },
     {
-      "image": "/images/service4.jpg",
-      "title": "Consulting",
-      "description": "Expert advice and strategic planning to help your business achieve its goals.",
-      "cta": { "text": "Book a Call", "link": "#consulting" }
+      "image": "/images/ChatGPT Image Aug 12, 2025, 12_48_20 PM.png",
+      "title": "الاستشارات",
+      "description": "نصائح خبراء وتخطيط استراتيجي لمساعدة عملك على تحقيق أهدافه.",
+      "cta_text": "",
+      "cta_link": "",
+      "cta": {
+        "text": "حجز مكالمة",
+        "link": "#consulting"
+      }
     },
     {
-      "image": "/images/service5.jpg",
-      "title": "Support & Maintenance",
-      "description": "Ongoing support and maintenance to keep your systems running smoothly.",
-      "cta": { "text": "See Plans", "link": "#support" }
+      "image": "/images/management-7014178_960_720.jpg",
+      "title": "الدعم والصيانة",
+      "description": "دعم وصيانة مستمرة للحفاظ على سير أنظمتك بسلاسة وكفاءة.",
+      "cta_text": "",
+      "cta_link": "",
+      "cta": {
+        "text": "عرض الخطط",
+        "link": "#support"
+      }
     }
   ]
 }

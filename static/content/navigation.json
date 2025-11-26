@@ -1,24 +1,24 @@
 {
   "links": [
     {
-      "text": "Home",
+      "text": "الرئيسية",
       "href": "/",
       "active": true
     },
     {
-      "text": "About",
+      "text": "من نحن",
       "href": "/about"
     },
     {
-      "text": "Services",
+      "text": "الخدمات",
       "href": "/services"
     },
     {
-      "text": "Portfolio",
+      "text": "أعمالنا",
       "href": "/portfolio"
     },
     {
-      "text": "Contact",
+      "text": "اتصل بنا",
       "href": "/contact"
     }
   ]

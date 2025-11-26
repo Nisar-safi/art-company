@@ -1,51 +1,50 @@
 {
-  "title": "What Our Clients Say",
-  "description": "Don't just take our word for it. Here's what our clients have to say about working with us.",
-
+  "title": "آراء عملائنا",
+  "description": "لا تكتفي بسماع كلامنا. إليك ما يقوله عملاؤنا عن تجربة العمل معنا.",
   "testimonials": [
     {
-      "photo": "/images/clients/ahmed-hassan.jpg",
-      "name": "Ahmed Hassan",
-      "position": "CEO",
+      "photo": "/images/engineer-4915790_960_720.jpg",
+      "name": "أحمد حسن",
+      "position": "الرئيس التنفيذي",
       "company": "TechStart Inc.",
-      "logo": "/images/logos/techstart.svg",
-      "text": "Working with this team was an absolute pleasure. They delivered beyond our expectations and the website they built has significantly increased our online presence and conversions.",
+      "logo": "/images/engineer-4915796_960_720.jpg",
+      "text": "العمل مع هذا الفريق كان متعة حقيقية. قدموا ما يتجاوز توقعاتنا، والموقع الذي بنوه زاد بشكل ملحوظ من وجودنا على الإنترنت ومعدلات التحويل.",
       "rating": 5
     },
     {
-      "photo": "/images/clients/fatima-al-otaibi.jpg",
-      "name": "Fatima Al-Otaibi",
-      "position": "Marketing Director",
+      "photo": "/images/woman-5653501_960_720.jpg",
+      "name": "فاطمة العتيبي",
+      "position": "مديرة التسويق",
       "company": "BrandCo",
-      "logo": "/images/logos/brandco.svg",
-      "text": "The attention to detail and creative solutions provided were exceptional. They truly understood our brand vision and brought it to life beautifully.",
+      "logo": "/images/man-2562325_960_720.jpg",
+      "text": "الاهتمام بالتفاصيل والحلول الإبداعية التي قدموها كانت استثنائية. لقد فهموا حقاً رؤية علامتنا التجارية وحولوها إلى واقع جميل.",
       "rating": 5
     },
     {
-      "photo": "/images/clients/omar-khan.jpg",
-      "name": "Omar Khan",
-      "position": "Founder",
+      "photo": "/images/engineer-4915802_960_720.jpg",
+      "name": "عمر خان",
+      "position": "المؤسس",
       "company": "StartupXYZ",
       "logo": "/images/logos/startupxyz.svg",
-      "text": "Professional, responsive, and highly skilled. The project was completed on time and within budget. I would highly recommend their services to anyone.",
+      "text": "محترفون، متجاوبون، وذوو مهارات عالية. اكتمل المشروع في الوقت المحدد وفي حدود الميزانية. أوصي بشدة بخدماتهم لأي شخص.",
       "rating": 5
     },
     {
-      "photo": "/images/clients/aisha-rahman.jpg",
-      "name": "Aisha Rahman",
-      "position": "Product Manager",
+      "photo": "/images/software-developer-6521720_960_720.jpg",
+      "name": "عائشة رحمن",
+      "position": "مديرة المنتج",
       "company": "InnovateCo",
-      "logo": "/images/logos/innovateco.svg",
-      "text": "Outstanding service from start to finish. They were patient with our many requests and delivered a product that exceeded all our expectations.",
+      "logo": "/images/computer-1828603_960_720.jpg",
+      "text": "خدمة متميزة من البداية إلى النهاية. كانوا صبورين مع طلباتنا الكثيرة وقدموا منتجاً تجاوز كل توقعاتنا.",
       "rating": 5
     },
     {
-      "photo": "/images/clients/yusuf-abdullah.jpg",
-      "name": "Yusuf Abdullah",
-      "position": "CTO",
+      "photo": "/images/engineer-4915790_960_720.jpg",
+      "name": "يوسف عبدالله",
+      "position": "مدير التقنية",
       "company": "ScaleFast",
-      "logo": "/images/logos/scalefast.svg",
-      "text": "The technical expertise and problem-solving skills demonstrated were impressive. They handled complex requirements with ease and delivered robust solutions.",
+      "logo": "/images/istockphoto-1830126474-2048x2048.webp",
+      "text": "الخبرة التقنية ومهارات حل المشكلات التي أظهروها كانت مذهلة. تعاملوا مع المتطلبات المعقدة بسهولة وقدموا حلولاً قوية.",
       "rating": 5
     }
   ]

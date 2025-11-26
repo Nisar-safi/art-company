@@ -1,43 +1,41 @@
 {
-  "body": "# Our Story\n\nFounded with a vision to deliver exceptional digital solutions, we have been helping businesses transform their online presence since our inception. Our journey began with a simple belief: every business deserves access to cutting-edge technology and creative expertise.\n\n## Our Mission\n\nTo empower businesses with innovative digital solutions that drive growth, enhance user experiences, and create lasting value for our clients and their customers.\n\n## Our Values\n\n- **Excellence**: We strive for perfection in every project\n- **Innovation**: We embrace new technologies and creative approaches\n- **Collaboration**: We work closely with our clients as partners\n- **Integrity**: We maintain transparency and honesty in all our dealings\n\n## Meet Our Team\n\nOur diverse team of experts brings together years of experience in design, development, and digital strategy to deliver outstanding results for our clients.",
+  "body": "# قصتنا\n\nتأسست شركتنا برؤية واضحة لتقديم حلول رقمية استثنائية، وقد ساعدنا منذ انطلاقتنا العديد من الشركات على تحويل وجودها الرقمي. بدأت رحلتنا بإيمان راسخ: كل شركة تستحق الوصول إلى أحدث التقنيات والخبرات الإبداعية.\n\n## مهمتنا\n\nتمكين الشركات من خلال حلول رقمية مبتكرة تعزز النمو، تُحسّن تجارب المستخدمين، وتخلق قيمة مستدامة لعملائنا وزبائنهم.\n\n## قيمنا\n\n- **التميز**: نسعى للكمال في كل مشروع\n- **الابتكار**: نتبنى التقنيات الجديدة والمناهج الإبداعية\n- **التعاون**: نعمل جنباً إلى جنب مع عملائنا كشركاء حقيقيين\n- **النزاهة**: نحافظ على الشفافية والصدق في جميع تعاملاتنا\n\n## تعرف على فريقنا\n\nيجمع فريقنا المتنوع من الخبراء سنوات من الخبرة في التصميم، التطوير، والاستراتيجية الرقمية لتقديم نتائج استثنائية لعملائنا.",
   "heroSlides": [
     {
-      "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
-      "title": "Our Team",
-      "subtitle": "Dedicated professionals committed to your success"
+      "image": "/images/clouds-8779574_960_720.jpg",
+      "title": "فريقنا",
+      "subtitle": "محترفون مخلصون ملتزمون بنجاحكم"
     },
     {
-      "image": "/images/about-mission.jpg",
-      "title": "Our Mission",
-      "subtitle": "Driving innovation and delivering excellence"
+      "image": "/images/76bfdf48-8fc8-4698-ab07-d975ab05a4e1.jpg",
+      "title": "مهمتنا",
+      "subtitle": "قيادة الابتكار وتقديم التميز"
     },
     {
-      "image": "/images/about-values.jpg",
-      "title": "Our Values",
-      "subtitle": "Excellence, Innovation, Collaboration, Integrity"
+      "image": "/images/istockphoto-1830126474-2048x2048.webp",
+      "title": "قيمنا",
+      "subtitle": "تميز، ابتكار، تعاون، نزاهة"
     }
   ],
-  "subtitle": "bbbbbbbbbbbbbbbbbbLearn more about our story, mission, and the team behind our success",
-  "image": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
-  "title": "About Us",
   "team": [
     {
-      "photo": "/images/ChatGPT Image Aug 8, 2025, 10_22_10 PM.png",
-      "name": "Baseer Ahmad",
-      "position": "CEO & Founder",
-      "bio": "With over 15 years of experience in digital transformation, John leads our vision and strategy."
+      "photo": "/images/istockphoto-1321017680-2048x2048.webp",
+      "name": "باسر أحمد",
+      "position": "المدير التنفيذي والمؤسس",
+      "bio": "بقوة 15 عاماً من الخبرة في التحول الرقمي، يقود باسر رؤيتنا واستراتيجيتنا نحو التميز."
     },
     {
-      "photo": "/images/team/cto.jpg",
-      "name": "Abdullah Al-Mansour",
-      "position": "CTO",
-      "bio": "Sarah oversees our technical architecture and ensures we stay at the forefront of technology."
+      "photo": "/images/istockphoto-1094912302-2048x2048.webp",
+      "name": "عبدالله المنصور",
+      "position": "مدير التقنية",
+      "bio": "يشرف عبدالله على هيكلنا التقني ويضمن بقائنا في طليعة التكنولوجيا الحديثة."
     },
     {
-      "photo": "/images/team/design-lead.jpg",
-      "name": "dil Jallal",
-      "position": "Design Lead",
-      "bio": "Mike brings creative vision and user-centered design principles to every project."
+      "photo": "/images/computer-1828603_960_720.jpg",
+      "name": "جلال ديل",
+      "position": "قائد التصميم",
+      "bio": "يقدم جلال رؤية إبداعية ومبادئ تصميم تركز على المستخدم في كل مشروع."
     }
-  ]
+  ],
+  "title": "من نحن"
 }

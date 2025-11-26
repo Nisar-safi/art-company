@@ -1,32 +1,30 @@
 {
-  "title": "Our Proven Process",
-  "description": "Four clear steps that turn your vision into reality — with transparency and excellence at every stage.",
+  "title": "منهجية العمل المثبتة",
+  "description": "أربع مراحل واضحة لتحويل رؤيتك إلى واقع ملموس - مع الشفافية والتميز في كل خطوة",
   "cta": {
-    "text": "Start Your Project",
+    "text": "ابدأ مشروعك الآن",
     "link": "/contact"
   },
   "steps": [
     {
       "icon": "🤝",
-      "title": "Consultation",
-      "description": "We begin with an in-depth discussion to understand your goals, challenges, and unique requirements."
+      "title": "الاستشارة والتخطيط",
+      "description": "نبدأ بجلسة متعمقة لفهم أهدافك، التحديات، والمتطلبات الخاصة بمشروعك"
     },
     {
       "icon": "🎨",
-      "title": "Design & Development",
-      "description": "Our experts craft custom strategies and beautiful, functional designs tailored perfectly to your brand."
+      "title": "التصميم والتطوير",
+      "description": "يصمم خبراؤنا استراتيجيات مخصصة وتصاميم جميلة وظيفية تتوافق تماماً مع هوية علامتك التجارية"
     },
     {
       "icon": "👁️",
-      "title": "Visualization",
-      "description": "See your project come to life through detailed mockups, prototypes, and previews before final build."
+      "title": "التجربة والمراجعة",
+      "description": "شاهد مشروعك يتحول إلى واقع من خلال نماذج تفصيلية، نماذج أولية، وعروض مسبقة قبل التنفيذ النهائي"
     },
     {
       "icon": "🚀",
-      "title": "Launch & Support",
-      "description": "We deploy your project seamlessly and provide ongoing support to ensure continued success."
+      "title": "الإطلاق والدعم",
+      "description": "ننفذ مشروعك بسلاسة ونوفر دعماً مستمراً لضمان استمرارية نجاحك ونموك"
     }
-      
-    
   ]
 }
