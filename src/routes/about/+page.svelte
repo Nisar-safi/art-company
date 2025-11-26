@@ -5,6 +5,13 @@
 	import { page, company, navigation, lastUpdate } from '$lib/utils/stores.js';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	
+
+    let isRTL = false;
+
+    onMount(() => {
+        isRTL = document.dir === 'rtl' || document.documentElement.dir === 'rtl';
+    });
 
 	let mobileMenuOpen = false;
 	let currentHeroSlide = 0;
@@ -129,12 +136,16 @@
 					on:click={() =>
 						goToHeroSlide((currentHeroSlide - 1 + heroImages.length) % heroImages.length)}
 					class="absolute top-1/2 left-6 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-4xl text-white opacity-80 backdrop-blur transition-all hover:bg-white/40 hover:opacity-100"
-					aria-label="Previous">‹</button
+					aria-label="Previous">
+					  {isRTL ? '›' : '‹'}
+					</button
 				>
 				<button
 					on:click={() => goToHeroSlide((currentHeroSlide + 1) % heroImages.length)}
 					class="absolute top-1/2 right-6 z-10 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-4xl text-white opacity-80 backdrop-blur transition-all hover:bg-white/40 hover:opacity-100"
-					aria-label="Next">›</button
+					aria-label="Next">
+					{isRTL ? '‹' : '›'}
+					</button
 				>
 			{/if}
 		</section>

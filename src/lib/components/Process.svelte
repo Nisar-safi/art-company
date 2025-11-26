@@ -80,14 +80,7 @@
 						class="px Configuring-10 hover:shadow-3xl inline-flex transform items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-500 px-6 py-5 text-xl font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:from-sky-600 hover:to-cyan-600"
 					>
 						{processData.cta.text || 'Get Started Today'}
-						<svg class="ml-3 h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2.5"
-								d="M17 8l4 4m0 0l-4 4m4-4H3"
-							/>
-						</svg>
+						
 					</a>
 				</div>
 			{/if}

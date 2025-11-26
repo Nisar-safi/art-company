@@ -2,6 +2,12 @@
 	import { onMount } from 'svelte';
 	export let carouselData = {};
 
+    let isRTL = false;
+
+    onMount(() => {
+        isRTL = document.dir === 'rtl' || document.documentElement.dir === 'rtl';
+    });
+
 	let currentSlide = 0;
 	$: cards = carouselData.cards || [];
 	$: total = cards.length;
@@ -88,19 +94,7 @@
 											class="inline-flex items-center rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-lg transition-all hover:bg-blue-700 hover:shadow-xl"
 										>
 											{cards[currentSlide].cta.text || 'Learn More'}
-											<svg
-												class="ml-3 h-5 w-5"
-												fill="none"
-												stroke="currentColor"
-												viewBox="0 0 24 24"
-											>
-												<path
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													stroke-width="2"
-													d="M9 5l7 7-7 7"
-												/>
-											</svg>
+											
 										</a>
 									</div>
 								{/if}
@@ -138,13 +132,13 @@
 				on:click={prevSlide}
 				class="absolute top-1/2 left-4 z-10 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border border-gray-300 bg-white/90 text-4xl text-gray-800 shadow-2xl backdrop-blur-lg transition-all hover:bg-blue-600 hover:text-white md:left-10 dark:border-gray-600 dark:bg-gray-800/90 dark:text-white"
 			>
-				‹
+				 {isRTL ? '›' : '‹'}
 			</button>
 			<button
 				on:click={nextSlide}
 				class="absolute top-1/2 right-4 z-10 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border border-gray-300 bg-white/90 text-4xl text-gray-800 shadow-2xl backdrop-blur-lg transition-all hover:bg-blue-600 hover:text-white md:right-10 dark:border-gray-600 dark:bg-gray-800/90 dark:text-white"
 			>
-				›
+			 {isRTL ? '‹' : '›'}
 			</button>
 
 			<!-- Dots -->

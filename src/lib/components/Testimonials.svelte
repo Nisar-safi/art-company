@@ -2,6 +2,12 @@
 	import { onMount } from 'svelte';
 	export let testimonialsData = {};
 
+    let isRTL = false;
+
+    onMount(() => {
+        isRTL = document.dir === 'rtl' || document.documentElement.dir === 'rtl';
+    });
+
 	let current = 0;
 	$: items = testimonialsData.testimonials || [];
 
@@ -106,13 +112,13 @@
 						on:click={prev}
 						class="absolute top-1/2 left-6 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-gray-300 bg-white text-3xl shadow-lg transition-all hover:border-sky-500 hover:bg-sky-500 hover:text-white dark:border-gray-700 dark:bg-gray-800"
 					>
-						‹
+						  {isRTL ? '›' : '‹'}
 					</button>
 					<button
 						on:click={next}
 						class="absolute top-1/2 right-6 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-gray-300 bg-white text-3xl shadow-lg transition-all hover:border-sky-500 hover:bg-sky-500 hover:text-white dark:border-gray-700 dark:bg-gray-800"
 					>
-						›
+					 {isRTL ? '‹' : '›'}
 					</button>
 				{/if}
 
