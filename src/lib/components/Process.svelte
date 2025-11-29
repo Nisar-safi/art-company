@@ -1,4 +1,10 @@
 <script>
+	import { onMount } from 'svelte';
+	let isRTL = false;
+
+	onMount(() => {
+		isRTL = document.dir === 'rtl' || document.documentElement.dir === 'rtl';
+	});
 	export let processData = {};
 
 	$: steps = processData.steps || [];
@@ -77,10 +83,26 @@
 				<div class="mt-20 text-center">
 					<a
 						href={processData.cta.link || '/contact'}
-						class="px Configuring-10 hover:shadow-3xl inline-flex transform items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-500 px-6 py-5 text-xl font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:from-sky-600 hover:to-cyan-600"
+						class="hover:shadow-3xl inline-flex transform items-center gap-3 rounded-full bg-gradient-to-r from-sky-500 to-cyan-500 px-6 py-5 text-xl font-semibold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:from-sky-600 hover:to-cyan-600"
 					>
 						{processData.cta.text || 'Get Started Today'}
-						
+
+						<!-- RTL-aware arrow -->
+						<svg
+							class={`h-6 w-6 transition-transform 
+					${isRTL ? 'rotate-180 group-hover:-translate-x-2' : 'group-hover:translate-x-2'}
+				`}
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2.5"
+								d="M17 8l4 4m0 0l-4 4m4-4H3"
+							/>
+						</svg>
 					</a>
 				</div>
 			{/if}
